@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <!--TextView merupakan suatu komponen yang digunakan untuk memberikan label pada Android-->
+    <!--EditText merupakan suatu komponen yang digunakan untuk memberikan input-an kepada user di Aplikasi Android Anda-->
+    <!--Button merupakan suatu komponen yang digunakan untuk memberikan suatu event atau action pada aplikasi Android Anda-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"/>
+
+    <!--android:hint="Input Your Name...." = Untuk memberikan petunjuk kepada user, bahwa "ini itu input-an apa"-->
+    <!--android:inputType="textPersonName" = Untuk memberi tau kepada Android, bahwa input yang digunakan untuk meng-input nama orang. Jika Anda ingin menginput angka, maka Anda bisa gunakan android:inputType="number"-->
+
+    <EditText
+        android:inputType="textPersonName"
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Input your name..."/>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:text="Submit"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

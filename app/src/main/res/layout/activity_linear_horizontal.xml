@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:padding="8dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearHorizontalActivity">
+
+    <!--Linear Layout Horizontal merupakan layout yang mempunyai sifat: Setiap child yang dibungkus dengan LinearLayout-->
+    <!--maka posisinya akan horizontal/ke kanan-->
+
+    <!--Untuk memberikan posisi Horizontal, Anda bisa menambahkan horizontal di attribute orientation. Contoh:-->
+    <!--android:attribute="horizontal"-->
+
+    <!--Contoh dari LinearLayout Horizontal bisa Anda lihat di layout ini, posisi kotak akan ke samping/horizontal-->
+
+    <!--android:layout_weight="1"-->
+    <!--Maksudnya adalah bobot dari komponennya berapa. Pada contoh ini artinya LinearLayout memiliki bobot 1.
+    Hal ini digunakan untuk menyamaratakan lebar dari komponen-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lorem ipsum dolor sit amet"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lorem ipsum dolor sit amet"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

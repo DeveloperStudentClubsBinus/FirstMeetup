@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <!--android:gravity="center" = attribute yang digunakan untuk menjadikan child dari Komponen tersebut posisinya "Center"-->
+    <!--android:padding="16dp" = attribute yang digunakan untuk memberikan jarak ke dalam Komponen-->
+
+    <Button
+        android:id="@+id/btn_vertical"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout Vertical"/>
+
+    <!--match_parent = Contohnya layout_width, artinya lebar dari Komponennya dari ujung ke ujung. Contohnya seperti yang kita gunakan skrg-->
+
+    <!--android:text="Linear Layout Vertical" = Untuk memberikan text ke dalam Komponen-->
+    <!--android:background="@color/colorAccent" = Untuk memberikan warna dasar/background di Komponen tersebut-->
+    <!--android:textColor="@android:color/white" = Untuk memberikan warna text di Komponen tersebut-->
+
+    <!--Important-->
+    <!--android:id="@+id/btn_vertical" = Untuk memberikan id Komponen. Hal ini dilakukan untuk mengindentifikasikan id ketika kita ingin gunakan di syntax Java-->
+
+    <Button
+        android:id="@+id/btn_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Linear Layout Horizontal"/>
 
-</android.support.constraint.ConstraintLayout>
+    <!--wrap_content = Contohnya layout_width, artinya lebar dari Komponennya menyesuaikan dengan isi dari Komponen itu sendiri. Dalam kasus ini lebarnya sepanjang Tulisan "Linear Layout Horizontal"-->
+
+    <Button
+        android:id="@+id/btn_form"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form"/>
+
+</LinearLayout>
